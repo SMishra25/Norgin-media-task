@@ -1,0 +1,118 @@
+.list-view .channel-show {
+  display: flex;
+  min-width: 10px;
+}
+.list-view .channel-show p {
+  margin: 5px 0 5px 10px;
+  font-size: 14px;
+}
+.blank {
+  width: 100%;
+  background-color: transparent;
+  margin-top: -50px;
+}
+.tile {
+  color: white;
+  background: #000;
+  position: relative;
+  text-align: left;
+  padding-top: 13px;
+}
+.tile span{
+  width: 3px;
+  background: yellow;
+  position: absolute;
+  height: 17px;
+  left: 0;
+  bottom: 0;
+}
+.tile:nth-child(2n+1) {
+  background: #111;
+}
+.channel-row {
+  width: 100%;
+  -webkit-box-shadow: inset -3px 0px 7px 4px #444;
+  box-shadow: inset -3px 0px 7px 4px #444;
+  background: #333;
+}
+.channel-row img{
+  width: 45px;
+  padding-top: 32px;
+}
+.timeline .tile {
+  background: #333333;
+}
+.tile.active {
+  background: #666666;
+}
+.timeline.channel-show .tile p {
+ float: left;
+ margin-left: -17px;
+ bottom: 10px;
+ position: absolute;
+}
+.tile.empty{
+  background: brown;
+}
+.now{
+  z-index: 2;
+  right: 10%;
+  position: fixed;
+  padding: 5px 11px;
+  color: white;
+  background: #FFC107;
+  border: #FFC107;
+  border-radius: 8px;
+  top: 70%;
+  font-size: 15px;
+}
+.clockLine {
+  z-index: 2;
+  background: darkorange;
+  height: 100%;
+  position: absolute;
+  width: 3px;
+  margin-left: 20px;
+}
+.dateBar{
+  background: #000;
+  position: fixed;
+  top: 58px;
+  width: 100%;
+  height: 57px;
+  z-index: 10;
+  left: 0;
+  color: white;
+}
+.show-time{
+  color: darkgrey;
+}
+.show-name {
+  color: white;
+}
+.days {
+  display: -webkit-box;
+}
+.dateBar .day{
+  width: 20%;
+  height: 57px;
+  color: gray;
+}
+.day.today {
+  background: #111;
+  color: white;
+}
+.day p {
+  margin: 0;
+}
+.starIcon{
+  box-shadow: 1px 0px 3px 0px #444;
+  float: left;
+  width: 93px;
+  padding: 11.5px 1px;
+}
+.list-row {
+  height: 99px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
